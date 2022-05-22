@@ -51,7 +51,6 @@ icon {
     color: #a1d3ff;
     font-size: 18px;
 }
-
 /* Quastion section styling */
 .box {
     width: 530px;
@@ -122,4 +121,23 @@ icon {
 
 .hide {
     display: none;
+}
+ /* Media queries for screen sizes max width 540px */
+@media (max-width: 550px) {
+  .info-box {
+    width: 100%;
+    } 
+    p {
+        margin: 1%;
+    }
+    h2 {
+        font-size: 100%;
+    }
+}
+/* Media queries for screen sizes max width 495px */
+@media (max-width: 495px) {
+    p {
+
+        line-height: 22px;
+    }
 }

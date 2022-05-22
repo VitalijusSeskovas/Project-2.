@@ -7,7 +7,6 @@ let answerButtonsElement = document.getElementById('answer-buttons');
 
 // Element for making quastions and answers apear random
 let shuffleQuestions, currentquestionIndex;
-
 // When Start Button click
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -19,7 +18,7 @@ nextButton.addEventListener('click', () => {
 The code below will hide
 Start Button and will make
 questions apear not in
-order but random 'shuffleQuestions':
+order but random 'shuffleQuestions' in line 25:
 */
 function startGame () {
     startButton.classList.add('hide');
@@ -27,6 +26,7 @@ function startGame () {
     currentquestionIndex = 0;
     questionBoxElement.classList.remove('hide');
     setNextQuestion();
+}
 
 // When Next Button click
 function setNextQuestion() {
@@ -47,8 +47,47 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
     });
+}
+
+// When Next Button will click reset
+function resetState() {
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
 // When user selet the answer
-function selectAnswer()
+function selectAnswer(e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  setStatusClass(document.body, correct);
+  Array.from(answerButtonsElement.children).forEach(button => {
+     setStatusClass(button, button.dataset.correct);
+  });
+  if (shuffleQuestions.length > currentquestionIndex + 1) {
+      nextButton.classList.remove('hide');
+  } else {
+      startButton.innerText = 'Restart';
+      startButton.classList.remove('hide');
+  }
+}
+// When user will select option will apear Correct or Wrong answers
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
+}
+
+// Wnen Next Button will click will restet answer buttons
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
 
 // Quastions and Answers
 let questions = [

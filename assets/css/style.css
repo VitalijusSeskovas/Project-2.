@@ -1,6 +1,13 @@
 /* Google Font*/
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
+/* Targeting buttons colors for right and wrong answers */
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -43,4 +50,76 @@ p {
 icon {
     color: #a1d3ff;
     font-size: 18px;
+}
+
+/* Quastion section styling */
+.box {
+    width: 530px;
+    max-width: 80%;
+    background-color: #f8a5a0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px;
+    margin: auto;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    height: 30px;
+    --hue: var(--hue-neutral);
+    border: 2px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 7px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #1b0735;
+    color: #000000;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: #1b0735;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn {
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #f8a5a0;
+    width: 100%;
+}
+
+.next-btn {
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #ffff;
+    background-color: #f8a5a0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }

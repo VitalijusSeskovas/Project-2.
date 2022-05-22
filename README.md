@@ -1,108 +1,154 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Yoga Quiz App
 
-Welcome VitalijusSeskovas,
+This application created for beginners has interest in Yoga or for those who like games/ exercises for mind.
+Also this application can be use as  additional accessory in website for Yoga studio owners to promate or attract more Yoga entusiasts.
+On the page is visible "Welcome" picture ("Hero") which has warm colours giving theme for
+Yoga Quiz Application. And for making friendly set up "smiling face" icon.
+Quiz will start once user will click on Start button displayed in middle of the page.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Visit the deployed site: [Yoga Quiz Application](https://vitalijusseskovas.github.io/Project-2./)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Screenshot of the website on several screen sizes](assets/images/ResponsiveScreenshoot.jpg)
 
-## Gitpod Reminders
+## User Experience
+- I want to know more about Yoga and if there is interactive applications I would be interested to try.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- I want to find out more about Yoga while I'm playing.
 
-`python3 -m http.server`
+- I will play this game if has nice them and interesting questions.
 
-A blue button should appear to click: _Make Public_,
+## Application purpose
 
-Another blue button should appear to click: _Open Browser_.
+- this  application  for beginers to play quiz to test basic knowledge about Yoga.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Using HTML, CSS styling and JavaScript interactive dynamics to create application easy navigate, interactive/dinamic and friendly application about Yoga topic.
 
-A blue button should appear to click: _Make Public_,
+- Motivate more pepole express interest to Yoga life style began from reading articles, blogs, books, playing quiz.
 
-Another blue button should appear to click: _Open Browser_.
+- Using JavaScript to creat questions apear random every time user click "Reset" button. This function gives small challange for user to repat game again to answer same quastion all correcty if he did mistakes first time.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- Application created for beginer and medium level players.
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Welcome Section
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- In the background of "Hero image" is text content with invitation to try this Quiz with explanation about Quiz topic.
 
-------
+[Welcome section screenshoot](assets/images/welcomeSection.jpg)
 
-## Release History
+### "Start Button"
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- In midle of the page is located Start Button. Start Button reacts to mouse position changing color and cursor apearence.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+[Start Button screenshot](assets/images/startButtonresponsive.jpg)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Start button has shadow box styling to macht background picture theme.
+- Start button has shadow box styling to macht background picture theme.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Using JavaScript making event to take user into next quiz "Rules" table.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Quiz Questions Section
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- After click event on Start Button will open Quiz Questions Section with question and four options.
+- When user selets option the answers will turn to green where is corret and red wrong answers.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[Quastion section screenshot](assets/images/questionsSection.jpg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- After selecting answer Next Button will apear to take to the next quastions.
+[Quastion section Next Button screenshot](assets/images/questionSectionNextButton.jpg)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- End of the Quiz after click Next Button, Next Button will hide and Reset Quiz Button will apear. Reset Quiz Button will make quastions to apear random sequence after reset Quiz.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[Reset Quiz Button screenshot](assets/images/RestartButton.jpg)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Desing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Colour Scheme
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- For this application I've used most of the colours from hero image using developer tools. To make sure user not overwhelmed with lots of diffent colours or images I keep colours scheme soft and minimalistic.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- I have used #000000, #fff and #1B0735 as the primary colour for the content text, for border bottoms and buttons.
 
-------
+- I have used #4b3343 as the body background colour.
 
-## FAQ about the uptime script
+- I have used ##ff0000 for the buttons to display the wrong answers.
 
-**Why have you added this script?**
+- I have used #047638 to display the correct answer.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- I have used #A1D3FF for icon.
 
-**How will this affect me?**
+- I have used #F8A5A0 for Quiz Qeustions and Sart Buttom section as backgroud.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Typography
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+ I have used Google Fonts to import font for the site text content. I've choose Macondo 
+[Macondo](https://fonts.google.com/specimen/Macondo?query=Macondo#type-tester) font style because it's reminded me Hindu or Sanskrit tradititional writing style.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+[Hero image screenshoot](assets/images/heroImage.jpg)
 
-**So….?**
+### Hero Image and Background
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Hero images was used from [pixabay] website (https://pixabay.com/images). This Quiz orientated to Yoga lovers so for "Hero" images and welcome section I hade use image with person who's maditate in beautifull  mountains with sunset/ sunrise relaxing background. Smile face icon add to "Hero image" make more friendly look.
+According by Yoga that what yoga maditators do that maditate before sun rise or sunset.
 
-**Can I opt out?**
+[Welcome To Yoga Quiz font style exemple screenshot](assets/images/welcomeSection.jpg)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Technologies
+* HTML5
+* CSS3
+* JavaScript
+* Balsamiq
+* Google Fonts
+* Gitpod 
+* GitHub
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
+- Website was tested several times for HTML style sheets [W3C Markup Validation Service](https://validator.w3.org/).
 
-**Anything more?**
+[Nu Html Checker result index page screenshot](assets/images/HTMLvalidator.jpg)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- For CSS style sheets [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator.html.en) using these validators.
 
----
+[Nu Html Checker result index page screenshot](assets/images/cssValidator.jpg)
 
-Happy coding!
+- For Javascript style sheets [Online Javascript Validator-BeautifyTools](https://beautifytools.com/javascript-validator.php). It was showing these erros. 
+[Online Javascript Validator-BeautifyTools validator shown erros](assets/images/javascriptErrors.jpg)
+
+I didn't manage to fix these erros as coun't find another solutions to change my curent code. Was looking solutions in google search and wEschools but was no direct anwser.
+
+[Online Javascript Validator-BeautifyTools page screenshot](assets/images/javascriptValidator.jpg)
+
+- Checked validation using Lighthouse audit service
+
+[Lighthouse result index page screenshot](assets/images/lighthouse.jpg)
+
+
+## Browser Testing
+Tested on these browsers and is fully working functional.
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+
+## Deployment
+- For this project I've used Github IDE editor and saved/pushed to a Github platform cloud using these commands:
+- git add .  
+- git commit -m "message"  
+- git push  
+This project was deployed to GitHub Pages using these steps:
+1. Login to Github then open the Github Repository.
+2. Within the Repository click on "Settings" on the top of menu.
+3. Go to the "Pages" section.
+4. Under the Sources click the dropdown displaying "None" and select branch to be deployed ("Main").
+5. Click on the "Save" button next "root" folder.
+6. Deployed link is generated at the top in green section.
+
+## Credits
+For this project I've use several resources:
+- [W3School](https://www.w3schools.com/)
+- [Goole search]
+- [Slack](https://app.slack.com/)
+- Book "Javascript & Jquery - interactive font-end web development" JON DUCKETT.
+- Thank you my mentor Rohit Sharma for good advices with list of points where to focus in building stages of this project.
+- Big thank you for my friend [Bronislovas Skridaila][https://www.linkedin.com/in/broniusskridaila/] - for helping when I stugle to make Javascript part functions and event listiners, to give me idea how to make Quiz run with random questions.

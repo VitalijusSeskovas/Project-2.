@@ -69,7 +69,7 @@ function selectAnswer(e) {
   if (shuffleQuestions.length > currentquestionIndex + 1) {
       nextButton.classList.remove('hide');
   } else {
-      startButton.innerText = 'Restart';
+      startButton.innerText = 'Restart Quiz';
       startButton.classList.remove('hide');
   }
 }
